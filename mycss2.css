@@ -5,7 +5,7 @@
 }
 body{
   min-height: 2000px;
-  overflow: hidden;
+  
 }
 header{
   position:fixed;
@@ -92,7 +92,7 @@ header.sticky{
   }
 
   section{
-    margin-top: 10vh;
+    margin-top: 50vh;
     padding: 100px;
     color: #000;
   }
