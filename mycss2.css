@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-  min-height: 2000px;
+  min-height: 600px;
 }
 header{
   position:fixed;
@@ -107,6 +107,8 @@ header.sticky{
     header{
       padding: 40px;
     }
+
+   
     section h2{
       font-size: 2em;
 
