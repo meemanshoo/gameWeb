@@ -1,138 +1,47 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-
-   <link rel="stylesheet" href="mycss.css">
-
-   <style>
-    body {
-  margin: 0;
-  background: lightgray;
-  text-align: center;
-  font-family: sans-serif;
-  color: #fefefe;
-}
-.crousal-container {
-  position: relative;
-  width: 320px;
-  margin: 100px auto 0 auto;
-  perspective: 900px;
-}
-
-.carousel {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d; 
-  animation: rotate360 80s infinite forwards linear;
-}
-.carousel__face { 
-  position: absolute;
-  width: 300px;
-  height: 187px;
-  top: 20px;
-  left: 10px;
-  right: 10px;
-  background-size: cover;
-  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.2);
-  display: flex;
-}
-
-span {
-  margin: auto;
-  font-size: 2rem;
-
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <link rel="stylesheet" href="mycss2.css">
+    </head>
+    <body>
+        <header class = "container">
+            <img src="img/crousal/2.png" class="banner">
+            <a href="#" class="logo">Brand.</a>
+            <div class="toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>
+                IDE run arguments/configuration
+            </h2>
+            <p>
+                First, you should read through the guide to understand unsound null safety. If you are sure that you want to run your application with unsound null safety, you can use the following command:
+                flutter run --no-sound-null-safety
+                The --no-sound-null-safety option is not documented in the article, however, I have not experienced any problems with it for the last few months (and especially not since the whole Flutter framework has been migrated to null safety).</p>
+        </section>
+        <script>
+            window.addEventListener("scroll",function(){
+                const header = document.querySelector("header");
+                header.classList.toggle('sticky',window.scrollY > 0);
+            });
 
 
-.carousel__face:nth-child(1) {
-  background-image: url("img/crousal/1.png");
-  transform: rotateY(  0deg) translateZ(430px); }
-.carousel__face:nth-child(2) { 
-  background-image: url("img/crousal/2.png");
-    transform: rotateY( 40deg) translateZ(430px); }
-.carousel__face:nth-child(3) {
-  background-image: url("img/crousal/3.png");
-  transform: rotateY( 80deg) translateZ(430px); }
-.carousel__face:nth-child(4) {
-  background-image: url("img/crousal/4.png");
-  transform: rotateY(120deg) translateZ(430px); }
-.carousel__face:nth-child(5) { 
-  background-image: url("img/crousal/4.png");
- transform: rotateY(160deg) translateZ(430px); }
-.carousel__face:nth-child(6) { 
-  background-image: url("img/crousal/1.png");
- transform: rotateY(200deg) translateZ(430px); }
-.carousel__face:nth-child(7) { 
-  background-image: url("img/crousal/2.png");
- transform: rotateY(240deg) translateZ(430px); }
-.carousel__face:nth-child(8) {
-  background-image: url("img/crousal/3.png");
-  transform: rotateY(280deg) translateZ(430px); }
-.carousel__face:nth-child(9) {
-  background-image: url("img/crousal/4.png");
-  transform: rotateY(320deg) translateZ(430px); }
+            const navigation =  document.querySelector("nav");
 
+            document.querySelector(".toggle").onclick = function(){
+                this.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
 
-
-@keyframes rotate360 {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(-360deg);
-  }
-}
-
-   </style>
-
-</head>
-
-<body>
-    <!-- particles.js container -->
-    <div id="particles-js">
-<div class="mycontainer">
-        
-
-    <div class="crousal-container">
-        <div class="carousel">
-          <div class="carousel__face"><span>1</span></div>
-          <div class="carousel__face"><span>2</span></div>
-          <div class="carousel__face"><span>3</span></div>
-          <div class="carousel__face"><span>4</span></div>
-          <div class="carousel__face"><span>5</span></div>
-          <div class="carousel__face"><span>6</span></div>
-          <div class="carousel__face"><span>7</span></div>
-          <div class="carousel__face"><span>8</span></div>
-          <div class="carousel__face"><span>9</span></div>
-        </div>
-      </div>
-
-
-        </div>
-
-    </div> <!-- stats - count particles -->
-
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-
-
-
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-   
-    <script src="particles.min.js"></script>
-    <script src="myjs.js"></script>
-
-</body>
-
+        </script>
+    </body>
 </html>
