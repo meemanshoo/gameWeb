@@ -106,7 +106,7 @@ header.sticky{
   @media (max-width:991px) {
     section,
     header{
-      padding: 10px;
+      padding: 40px;
     }
     section h2{
       font-size: 2em;
