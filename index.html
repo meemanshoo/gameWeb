@@ -1,50 +1,265 @@
 <!DOCTYPE html>
 <html>
-    <head>
-         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>test</title>
-        <link rel="stylesheet" href="mycss2.css">
-       
-    </head>
-    <body>
-        <header class = "container">
-            <img src="img/crousal/2.png" class="banner">
-            <a href="#" class="logo">Plus</a>
-            <div class="toggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <h2>
-                IDE run arguments/configuration
-            </h2>
-            <p>
-                First, you should read through the guide to understand unsound null safety. If you are sure that you want to run your application with unsound null safety, you can use the following command:
-                flutter run --no-sound-null-safety
-                The --no-sound-null-safety option is not documented in the article, however, I have not experienced any problems with it for the last few months (and especially not since the whole Flutter framework has been migrated to null safety).</p>
-        </section>
-        <script>
-            window.addEventListener("scroll",function(){
-                const header = document.querySelector("header");
-                header.classList.toggle('sticky',window.scrollY > 0);
-            });
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="mycss2.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/testimonial.css">
+    <link rel="stylesheet" href="gamics/stylegam.css">
+
+</head>
+
+<body>
+    <header class="container">
+        <img src="img/crousal/2.png" class="banner">
+        <a href="#" class="logo">Plus</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>
+            IDE run arguments/configuration
+        </h2>
+        <p>
+            First, you should read through the guide to understand unsound null safety. If you are sure that you want to
+            run your application with unsound null safety, you can use the following command:
+            flutter run --no-sound-null-safety
+            The --no-sound-null-safety option is not documented in the article, however, I have not experienced any
+            problems with it for the last few months (and especially not since the whole Flutter framework has been
+            migrated to null safety).</p>
+    </section>
 
 
-            const navigation =  document.querySelector("nav");
 
-            document.querySelector(".toggle").onclick = function(){
-                this.classList.toggle('active');
-                navigation.classList.toggle('active');
-            }
 
-        </script>
-    </body>
+
+<!-- cards -->
+
+<div class="mycards">
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonialBox">
+            <img src="img/right-quote.png" class="quote">
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+            </div>
+            <div class="details">
+                <div class="imgBx">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+</div>
+
+<div style="height: 150px;"></div>
+
+<!-- footer -->
+
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p>&copy 2021 Made By Meemanshoo | All Rights Reserved</p>
+</footer>
+
+  
+  <script src="mouseanim.js">  </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   
+
+<script src="scripts/testimonial.js"></script>
+
+
+<script>
+
+
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+
+    const navigation = document.querySelector("nav");
+
+    document.querySelector(".toggle").onclick = function () {
+        this.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+</script>
+</body>
+
 </html>

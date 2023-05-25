@@ -2,10 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
-  min-height: 600px;
+  min-height: 900px;
+  display: flex;
+
+  background: #333;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: url(
+      img/gun2.png
+  )110 0 , auto;   
+  flex-direction: column;
+  cursor: url(
+    img/cursor/gun2.png
+)110 0 , auto !important;  
 }
+
+
 header{
   position:fixed;
   top: 0;
@@ -26,6 +41,7 @@ header .banner{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 2;
     transition: 1s;
   }
 
@@ -47,7 +63,7 @@ header.sticky{
     font-weight: 700;
     transition: 1s;
     text-decoration: none;
-    z-index: 1;
+    z-index: 3;
   }
 
   header.sticky .logo{
