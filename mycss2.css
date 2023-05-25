@@ -7,8 +7,7 @@
 body{
   min-height: 900px;
   display: flex;
-
-  background: #333;
+  background: url(img/background/bg.jpg);
   justify-content: flex-end;
   align-items: flex-end;
   cursor: url(
@@ -28,7 +27,7 @@ header{
   width: 100%;
   padding: 0 100px;
   height: 100vh;
-  background: #000;
+  background: #160336;
   display: flex;
   justify-content: flex-end;
   align-items: center;
