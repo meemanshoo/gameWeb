@@ -10,150 +10,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/testimonial.css">
     <link rel="stylesheet" href="gamics/stylegam.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/poster.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
     
-
-.video-play-button {
-  position: absolute;
-  z-index: 10;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  box-sizing: content-box;
-  display: block;
-  width: 32px;
-  height: 44px;
-  /* background: #fa183d; */
-  border-radius: 50%;
-  padding: 18px 20px 18px 28px;
-}
-
-.video-play-button:before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-  width: 80px;
-  height: 80px;
-  background: #fff;
-  border-radius: 50%;
-  animation: pulse-border 1500ms ease-out infinite;
-}
-
-.video-play-button:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-  width: 80px;
-  height: 80px;
-  background: #fff;
-  border-radius: 50%;
-  transition: all 200ms;
-}
-
-.video-play-button:hover:after {
-  background-color: darken(#160336, 10%);
-}
-
-.video-play-button img {
-  position: relative;
-  z-index: 3;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
-.video-play-button span {
-  display: block;
-  position: relative;
-  z-index: 3;
-  width: 0;
-  height: 0;
-  border-left: 32px solid #160336;
-	border-top: 22px solid transparent;
-	border-bottom: 22px solid transparent;
-}
-
-@keyframes pulse-border {
-  0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0;
-  }
-}
-
-
-
-.video-overlay {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.80);
-  opacity: 0;
-  transition: all ease 500ms;
-}
-
-.video-overlay.open {
-  position: fixed;
-  z-index: 1000;
-  opacity: 1;
-}
-
-.video-overlay-close {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  right: 20px;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: 400;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 200ms;
-}
-
-.video-overlay-close:hover {
-  color: #fa183d;
-}
-
-.video-overlay iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  /* width: 90%; */
-  /* height: auto; */
-  box-shadow: 0 0 15px rgba(0,0,0,0.75);
-}
-
-@media (max-width:600px) {
-    .video-overlay iframe {
-        width: 90%;
-    }
-}
+    .panel-body {background-color:black !important;}
     </style>
 </head>
 
 <body>
 
-    <header class="container">
+    <header class="headerContainer">
         <img src="img/crousal/2.png" class="banner">
-        <a href="#" class="logo">Plus
+        <a href="#" class="logo text-light">Plus
 
         </a>
 
@@ -179,7 +50,7 @@
     </header>
 
 
-    <section>
+    <section class="text-light">
         <h2>
             IDE run arguments/configuration
         </h2>
@@ -191,6 +62,29 @@
             problems with it for the last few months (and especially not since the whole Flutter framework has been
             migrated to null safety).</p>
     </section>
+
+<!--  -->
+<!-- poster -->
+<!--  -->
+
+<div class="container text-light fw-bold px-4 py-5 text-center" ><h1>Services</h1></div>
+
+    <div id="cta" class="cta container">
+        <div class="container aos-init aos-animate" data-aos="zoom-in">
+  
+          <div class="row">
+            <div class="col-lg-9 text-center text-light text-lg-start">
+              <h3>Call To Action</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle calltoaction" href="#">Call To Action</a>
+            </div>
+          </div>
+  
+        </div>
+    </div>
+
 
 
 
@@ -206,7 +100,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -220,7 +114,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -234,7 +128,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -248,7 +142,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -262,7 +156,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -276,7 +170,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -290,7 +184,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -304,7 +198,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -318,7 +212,7 @@
         <div class="testimonialBox">
             <img src="img/right-quote.png" class="quote">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only </p>
             </div>
             <div class="details">
                 <div class="imgBx">
@@ -333,8 +227,111 @@
   </div>
 
 </div>
-
 <div style="height: 150px;"></div>
+
+<!--  -->
+<!-- faq -->
+<!--  -->
+
+
+<div id="faq" class="faq container">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 text-light">
+          <div class="content px-xl-5">
+            <h3>Frequently Asked <strong>Questions</strong></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-8 ">
+
+          <div class="accordion accordion-flush aos-init aos-animate" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="accordion-item rounded-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1" aria-expanded="false">
+                  <span class="num">1.</span>
+                  Non consectetur a erat nam at lectus urna duis?
+                </button>
+              </h3>
+              <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist" style="">
+                <div class="accordion-body">
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2" aria-expanded="false">
+                  <span class="num">2.</span>
+                  Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                </button>
+              </h3>
+              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3" aria-expanded="false">
+                  <span class="num">3.</span>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                </button>
+              </h3>
+              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4" aria-expanded="false">
+                  <span class="num">4.</span>
+                  Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                </button>
+              </h3>
+              <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5" aria-expanded="false">
+                  <span class="num">5.</span>
+                  Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                </button>
+              </h3>
+              <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+</div>
+
+
+<div style="height: 200px;"></div>
 
 <!-- footer -->
 
@@ -376,7 +373,7 @@
    
 
 <script src="scripts/testimonial.js"></script>
-
+<script src="scripts/vedio.js"></script>
 
 <script>
 
@@ -411,27 +408,8 @@ var swiper = new Swiper(".mySwiper", {
         this.classList.toggle('active');
         navigation.classList.toggle('active');
     }
-
-
-    $('#play-video').on('click', function(e){
-  e.preventDefault();
-  $('#video-overlay').addClass('open');
-  $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
-});
-
-$('.video-overlay, .video-overlay-close').on('click', function(e){
-  e.preventDefault();
-  close_video();
-});
-
-$(document).keyup(function(e){
-  if(e.keyCode === 27) { close_video(); }
-});
-
-function close_video() {
-  $('.video-overlay.open').removeClass('open').find('iframe').remove();
-};
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

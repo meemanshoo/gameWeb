@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+
 body{
   min-height: 900px;
   display: flex;
@@ -18,6 +19,7 @@ body{
     img/cursor/gun2.png
 )110 0 , auto !important;  
 }
+
 
 
 header{
