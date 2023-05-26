@@ -17,8 +17,7 @@ body{
   flex-direction: column;
   cursor: url(
     img/cursor/gun2.png
-)110 0 , auto !important;  
-opacity: 0.8;
+)110 0 , auto !important;   
 }
 
 .faq{

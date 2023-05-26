@@ -1,4 +1,9 @@
 
+:root {
+    --orange: hsl(31, 100%, 51%);
+}
+
+
 a{
     cursor: url(
         img/gun2.png
