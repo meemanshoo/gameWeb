@@ -44,10 +44,21 @@
                     <a href="#"><i class="bi bi-plus"></i>My List</a>
                 </div>
             </div>
-            <a href="#" class="play"><img src="img/play.png" alt="#">Watch Trailer</a>
+            <a href="#" class="play" onclick="toggleVideo();"><img src="img/play.png" alt="#">Watch Trailer</a>
         </div>
         <div class="trailer">
-            <video src="img/tra"></video>
+            <video src="vid/vid1.mp4" controls="true"></video>
+            <img src="img/close.png" alt="#" class="close" onclick="toggleVideo();">
         </div>
+
+        <script>
+            function toggleVideo(){
+                const trailer = document.querySelector(".trailer");
+                const video = document.querySelector("video");
+                trailer.classList.toggle('active');
+                video.currentTime = 0;
+                video.pause();
+            }
+        </script>
     </body>
 </html>

@@ -65,11 +65,17 @@ header.sticky{
     z-index: 3;
   }
 
+
   header.sticky .logo{
      position: absolute;
      font-size: 2em;
      left: 100px;
      transform: translate(0%,-50%);
+  }
+
+  header.sticky .video-play-button{
+    visibility: hidden;
+    opacity: 0;
   }
   
   nav{
